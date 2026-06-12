@@ -1,10 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>موقعي الشخصي</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة إهداء الذكريات 💖</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>أهلاً بك في موقعي الشخصي</h1>
-    <p>أنا بهاء، وهذا أول موقع لي.</p>
+
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <div class="container">
+        <div class="card main-card">
+            <div class="profile-frame">
+                <img src="https://via.placeholder.com/150" alt="Our Memory" id="profileImg">
+            </div>
+            <h2>جاهزة؟ 🤔</h2>
+            <p class="subtitle">كل اللي هنا هيفضل بيني وبينك طول العمر ❤️</p>
+            
+            <div class="gift-header">
+                <span class="sparkle">✨</span> قررت افرحك العيد دا بطريقتي <span class="sparkle">✨</span>
+            </div>
+            <h1 class="target-name">NODYY ❤️</h1>
+            <p class="love-statement">كل سنة وانتي منورة حياتي .. حياتي ابتدت بيكي</p>
+        </div>
+
+        <div class="card counter-card">
+            <h3>❤️ اول مرة اتقابلنا فيه ❤️</h3>
+            <div class="date-badge">2021-04-04</div>
+            
+            <p class="counter-title">🕒 هيفضل شغال طول ما احنا مع بعض</p>
+            <div class="countdown-grid">
+                <div class="time-box"><span id="years">0</span><p>سنة</p></div>
+                <div class="time-box"><span id="months">0</span><p>شهر</p></div>
+                <div class="time-box"><span id="days">0</span><p>يوم</p></div>
+                <div class="time-box"><span id="hours">0</span><p>ساعة</p></div>
+            </div>
+        </div>
+
+        <div class="card interactive-card">
+            <h3>😉 دوسي على الكروت وشوفي مستخبي إيه</h3>
+            <div class="cards-grid">
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">❤️ الكارت الأول</div>
+                        <div class="flip-card-back">بحبك أوي يا روح قلبي ونفضل مع بعض العمر كله! 🥰</div>
+                    </div>
+                </div>
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">❤️ الكارت الثاني</div>
+                        <div class="flip-card-back">انتي أجمل حاجة حصلت في دنيتي كلها 🌸</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="audio-player">
+            <div class="track-info">
+                <p class="track-name">🎵 أغنيتنا المفضلة</p>
+                <p class="track-status" id="trackStatus">متوقف الآن</p>
+            </div>
+            <div class="player-controls">
+                <audio id="myAudio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+                <button class="play-btn" onclick="togglePlay()" id="playBtn">▶️ تشغيل</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
